@@ -53,11 +53,7 @@ The directory structure should look something like this:
         └── ...
 ```
 
-Move to the `scratch` folder and clone the repository:
 
-```bash
-cd ns-allinone-3.37/ns-3.37/scratch
-git clone git@github.com:TendTo/ns3-Tahoe-vs-Reno.git
 ```
 
 Lastly, move back to the `ns-3.37` folder and build the simulation:
@@ -118,15 +114,7 @@ The following are some example usages of the simulation with the output graphs.
 ./ns3 run "p2p-project --n_tcp_tahoe=1 --n_tcp_reno=0 --error_p=0.001 --run=0 --duration=10"
 ```
 
-```mermaid
-flowchart LR
-r{{router}}
-n0[Node 0\nTCP Tahoe]
-i((Receiver))
 
-    r <--Random loss--> i
-    n0 <----> r
-```
 
 ![Graph 1](./docs/img/graph-1.png)
 
@@ -136,15 +124,7 @@ i((Receiver))
 ./ns3 run "p2p-project --n_tcp_tahoe=0 --n_tcp_reno=1 --error_p=0.001 --run=0 --duration=10"
 ```
 
-```mermaid
-flowchart LR
-r{{router}}
-n0[Node 0\nTCP Reno]
-i((Receiver))
 
-    r <--Random loss--> i
-    n0 <----> r
-```
 
 ![Graph 2](./docs/img/graph-2.png)
 
@@ -154,17 +134,7 @@ i((Receiver))
 ./ns3 run "p2p-project --n_tcp_tahoe=1 --n_tcp_reno=1 --error_p=0.002 --run=1 --duration=10"
 ```
 
-```mermaid
-flowchart LR
-r{{router}}
-n0[Node 0\nTCP Tahoe]
-n1[Node 1\nTCP Reno]
-i((Receiver))
 
-    r <--Random loss--> i
-    n0 <----> r
-    n1 <----> r
-```
 
 ![Graph 3](./docs/img/graph-3.png)
 
@@ -174,21 +144,7 @@ i((Receiver))
 ./ns3 run "p2p-project --n_tcp_tahoe=2 --n_tcp_reno=2 --run=0 --duration=10"
 ```
 
-```mermaid
-flowchart LR
-r{{router}}
-n0[Node 0\nTCP Tahoe]
-n1[Node 1\nTCP Tahoe]
-n2[Node 2\nTCP Reno]
-n3[Node 3\nTCP Reno]
-i((Receiver))
 
-    r <----> i
-    n0 <----> r
-    n1 <----> r
-    n2 <----> r
-    n3 <----> r
-```
 
 ![Graph 4](./docs/img/graph-4.png)
 
