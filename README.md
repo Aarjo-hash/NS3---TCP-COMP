@@ -116,7 +116,7 @@ The following are some example usages of the simulation with the output graphs.
 
 
 
-![Graph 1](./docs/img/graph-1.png)
+![Graph 1](./graph-1.png)
 
 ### Scenario 2
 
@@ -126,7 +126,7 @@ The following are some example usages of the simulation with the output graphs.
 
 
 
-![Graph 2](./docs/img/graph-2.png)
+![Graph 2](./graph-2.png)
 
 ### Scenario 3
 
@@ -136,7 +136,7 @@ The following are some example usages of the simulation with the output graphs.
 
 
 
-![Graph 3](./docs/img/graph-3.png)
+![Graph 3](./graph-3.png)
 
 ### Scenario 4
 
@@ -146,7 +146,7 @@ The following are some example usages of the simulation with the output graphs.
 
 
 
-![Graph 4](./docs/img/graph-4.png)
+![Graph 4](./graph-4.png)
 
 ## Conclusion
 
